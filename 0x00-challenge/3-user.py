@@ -4,25 +4,20 @@
 """
 import hashlib
 import uuid
-
-
 class User():
     """
     User class:
     - id: public string unique (uuid)
     - password: private string hash in MD5
     """
-
-    __password = None
-
-    def __init__(self):
+  __password = None
+  def __init__(self):
         """
-        Initialize a new user:
-        - assigned an unique `id`
+Initialize a new user:
+ - assigned an unique `id`
         """
-        self.id = str(uuid.uuid4())
-
-    @property
+ self.id = str(uuid.uuid4())
+  @property
     def password(self):
         """
         Password getter
